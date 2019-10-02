@@ -4,28 +4,20 @@
     <title>Meu CSS Não funciona</title>
     <meta charset="UTF-8">
     <style>
-        #unico {
-            color: blue;
-        }
-
-        p.destaque {
-            color: orange;
-        }
-
-        .destaque {
-            color: red;
-        }
-
-        p[lang] {
-            color: black;
-        }
-
-        #jumbotron {
+        .jumbotron {
             background: rgba(0, 0, 0, 0.5);
         }
 
-        #jumbotron p {
+        .jumbotron__text {
             color: white;
+        }
+
+        .jumbotron__title {
+            color: red;
+        }
+
+        p {
+            color: red;
         }
     </style>
 </head>
@@ -33,10 +25,10 @@
 <body>
     <h1>Meu CSS Não funciona</h1>
 
-    <div id="jumbotron">
-        <h2>subtitulo</h2>
-        <p>paragrafos</p>
-        <p>paragrafos</p>
+    <div class="jumbotron">
+        <h2 class="jumbotron__title">subtitulo</h2>
+        <p class="jumbotron__text">paragrafos</p>
+        <p class="jumbotron__text">paragrafos</p>
     </div>
 
     <p syle="color:yellow">com estilo inline</p>
